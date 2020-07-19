@@ -22,12 +22,6 @@ window.addEventListener("load", function() {
    });  
 
 
-
-
-
-
-
-
    form.addEventListener("submit", function(event) {
      let pilotName = document.querySelector("input[name=pilotName]");
      let copilotName = document.querySelector("input[name=copilotName]");
@@ -67,6 +61,8 @@ window.addEventListener("load", function() {
       } else {
          launchStatus.style.color = 'green';
          launchStatus.innerHTML = 'Shuttle is ready for launch!'
+         fuelStatus.innerHTML = 'Fuel level high enough for launch'
+         cargoStatus.innerHTML = 'Cargo mass low enough for launch'
       }
       event.preventDefault();    
    
